@@ -12,15 +12,23 @@ public class ComputeDiscriminant {
     public static void main(String[] orgs) {
 
         // getting the coefficients of the quadratic equation from the user
+        System.out.println("Write your quadratic equation in this form ax2 + bx + c = 0");
         System.out.print("Enter your a: ");
         Scanner input = new Scanner(System.in);
-        double a = input.nextDouble();
+        int a = input.nextInt();
 
         System.out.print("Enter your b: ");
-        double b = input.nextDouble();
+        int b = input.nextInt();
 
         System.out.print("Enter your c: ");
-        double c = input.nextDouble();
+        int c = input.nextInt();
+        
+        // Calculating the discriminant
+        int discriminant = ((b*b) - 4*a*c);
+
+        //printing the result
+        System.out.println("The discriminant of the equation " + a + "x2 + " + b + "x + " + c + " = 0 is: " + discriminant);
+        System.out.println("The program ends here");
 
     }
     
