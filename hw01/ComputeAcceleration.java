@@ -15,7 +15,7 @@ public class ComputeAcceleration {
         double acceleration = ((finalVelocity - initialVelocity)/time);
 
         //displaying the result
-        System.out.println("The acceleration is " + acceleration + );
+        System.out.println("The acceleration is " + acceleration ); // JA
         System.out.println("based on initial velocity of 5.6 m/s and a final velocity of 10.5 m/s in 0.5 s span of time");
     }
     
