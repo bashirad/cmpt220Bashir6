@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Bashir",
+            "request": "launch",
+            "mainClass": "hw03.Bashir",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComputeAcceleration",
+            "request": "launch",
+            "mainClass": "hw01.ComputeAcceleration",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComputeDiscriminant",
+            "request": "launch",
+            "mainClass": "hw01.ComputeDiscriminant",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisplayPattern",
+            "request": "launch",
+            "mainClass": "hw01.DisplayPattern",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch RectanglePerimeterAreaAndDiagonallength",
+            "request": "launch",
+            "mainClass": "hw02.RectanglePerimeterAreaAndDiagonallength",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        }
+    ]
+}
