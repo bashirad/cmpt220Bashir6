@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SlopeOfLines",
+            "request": "launch",
+            "mainClass": "hw02.SlopeOfLines",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch FrictionCoefficient",
             "request": "launch",
             "mainClass": "hw02.FrictionCoefficient",
