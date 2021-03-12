@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FrictionCoefficient",
+            "request": "launch",
+            "mainClass": "hw02.FrictionCoefficient",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch OneDimensionalMotion",
             "request": "launch",
             "mainClass": "hw02.OneDimensionalMotion",
