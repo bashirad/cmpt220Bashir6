@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReduceFractions",
+            "request": "launch",
+            "mainClass": "hw03.ReduceFractions",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch SlopeOfLines",
             "request": "launch",
             "mainClass": "hw02.SlopeOfLines",
