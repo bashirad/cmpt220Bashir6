@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RandomPoint",
+            "request": "launch",
+            "mainClass": "hw03.RandomPoint",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch SlopeInterceptForm",
             "request": "launch",
             "mainClass": "hw03.SlopeInterceptForm",
