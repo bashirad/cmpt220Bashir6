@@ -1,6 +1,6 @@
-package hw03;
+//package hw03;
 
-import org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt;
+//import org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt;
 
 public class RandomPoint {
     public static void main(String[] orgs){
