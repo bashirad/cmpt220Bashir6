@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringsExamples",
+            "request": "launch",
+            "mainClass": "StringsExamples",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch CapitalizeFirstLetterOfEachWork",
+            "request": "launch",
+            "mainClass": "hw05.CapitalizeFirstLetterOfEachWork",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecimalToBinaryConversion",
+            "request": "launch",
+            "mainClass": "hw05.DecimalToBinaryConversion",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecimalToBinary",
+            "request": "launch",
+            "mainClass": "hw05.DecimalToBinary",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch MathTutor",
             "request": "launch",
             "mainClass": "hw04.MathTutor",
