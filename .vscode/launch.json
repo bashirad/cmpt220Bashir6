@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MathTutor",
+            "request": "launch",
+            "mainClass": "hw04.MathTutor",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch RandomResponseMessage",
             "request": "launch",
             "mainClass": "hw03.RandomResponseMessage",
