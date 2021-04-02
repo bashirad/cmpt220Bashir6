@@ -16,26 +16,20 @@ public class DecimalToBinaryConversion {
         System.out.print("Answer is " + conversion(integer));
     }
 
-    /*//a method for decimal to binary conversion
-    public static String decimalToBinary(int value){
 
-    } */
 
     //a method for decimal to binary conversion
-    public static String conversion (int value) {
+    public static int conversion (int value) {
         int count = 0;
         while (value < 0) {
-            int [] binaryNumbers = new int [count];
             if (value % 2 == 0){
                 int quotient = value / 2;
-                binaryNumbers[count] = 0;
-            }
-            else {
-                binaryNumbers[count] = 1;
+                System.out.print(quotient);
             }
             count++;
-            System.out.println(Arrays.toString(binaryNumbers));
+            
         }
+        return quotient;
     }
 
 }
