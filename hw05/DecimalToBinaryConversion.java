@@ -3,9 +3,6 @@ package hw05;
 //import Scanner
 import java.util.Scanner;
 
-//
-import java.util.Arrays;
-
 public class DecimalToBinaryConversion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -13,23 +10,30 @@ public class DecimalToBinaryConversion {
         int integer = input.nextInt();
         input.close();
 
-        System.out.print("Answer is " + conversion(integer));
+        System.out.print("Answer is " + decimalToBinary(integer));
     }
 
 
 
     //a method for decimal to binary conversion
-    public static int conversion (int value) {
-        int count = 0;
-        while (value < 0) {
+    public static String decimalToBinary (int value) {
+        String result = "";
+        String backwardOrder = "";
+        while (value > 0) {
             if (value % 2 == 0){
-                int quotient = value / 2;
-                System.out.print(quotient);
+                result += "0";
+                value = value / 2;
             }
-            count++;
-            
+            else {
+                result += "1";
+                value = value / 2;
+            }
         }
-        return quotient;
+        for(int i = result.length() - 1; i >= 0; i--)
+        {
+        backwardOrder += result.charAt(i);
+        }
+        return backwardOrder;
     }
 
 }
