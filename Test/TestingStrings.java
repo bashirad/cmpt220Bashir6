@@ -1,14 +1,8 @@
-package hw05;
+package Test;
 
+import java.util.*;
 
-//import scanner
-import java.util.Scanner; 
-
-//import arrays
-import java.util.Arrays;
-
-
-public class CapitalizeFirstLetterOfEachWork {    
+public class TestingStrings {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a string: ");
@@ -20,6 +14,8 @@ public class CapitalizeFirstLetterOfEachWork {
 
       //method for capitalizing first letter of each word
       public static String capitalizeFirstLetter (String message){
+
+        String[] letters = name.split("(?<=.)");
 
         //creating an array that has message length
         char [] messageArray = new char[message.length()];
@@ -36,8 +32,9 @@ public class CapitalizeFirstLetterOfEachWork {
                 messageArray[i + 1] = Character.toUpperCase(messageArray [i +1]);
             }
         }
-       String messageString =  String.valueOf(messageArray);
-       return messageString;
-        }
+        String messageString = Arrays.toString(messageArray);
+       
+        return messageString;
     }
 
+}

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestingStrings",
+            "request": "launch",
+            "mainClass": "Test.TestingStrings",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch StringsExamples",
             "request": "launch",
             "mainClass": "StringsExamples",
