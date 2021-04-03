@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PascalTriangle",
+            "request": "launch",
+            "mainClass": "hw05.PascalTriangle",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch HrsMinSec",
             "request": "launch",
             "mainClass": "hw05.HrsMinSec",
