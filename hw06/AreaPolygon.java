@@ -1,9 +1,8 @@
-package hw06;
 
 //importing scanner
 import java.util.Scanner;
 
-public class AreaOfPolygon {
+public class AreaPolygon {
     public static void main(String[] args) {
         //create a scanner
         Scanner input = new Scanner(System.in);
@@ -16,7 +15,7 @@ public class AreaOfPolygon {
     }
 
         //prompting the user to enter y coordinates of the 6 points
-        System.out.print("Enter the 6 y coordinates, as 6 numbers separated by spaces: ");
+        System.out.print("Enter the 6 y coordinates, as 6 numbers separated by spaces then hit Enter: ");
         int [] yCoordinates = new int [6];
         for (int j = 0; j < 6; j++){
             yCoordinates[j] = input.nextInt();

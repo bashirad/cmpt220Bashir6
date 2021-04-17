@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AreaPolygon",
+            "request": "launch",
+            "mainClass": "AreaPolygon",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch AreaOfPolygon",
             "request": "launch",
             "mainClass": "AreaOfPolygon",
