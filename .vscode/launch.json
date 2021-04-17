@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AreaOfPolygon",
+            "request": "launch",
+            "mainClass": "AreaOfPolygon",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch AreaOfPolygon",
+            "request": "launch",
+            "mainClass": "hw06.AreaOfPolygon",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test.Test",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch PascalTriangle",
             "request": "launch",
             "mainClass": "hw05.PascalTriangle",
