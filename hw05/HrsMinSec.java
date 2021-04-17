@@ -1,4 +1,4 @@
-package hw05;
+//package hw05;
 
 //import Scanner
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class HrsMinSec {
                 result += "00:" + (seconds / 60) + ":" + (seconds % 60);
             }
             else {
-                result += (seconds / 3600) + ":" + (seconds % 60) + ":" + (seconds % 60);
+                result += (seconds / (3600 * 24)) + ":" + (seconds % 3600) / 60 + ":" + (seconds % 60);
             }
         }
         return result;

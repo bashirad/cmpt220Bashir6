@@ -1,4 +1,4 @@
-package hw04;
+//package hw04;
 
 //importing a scanner
 import java.util.Scanner; 
