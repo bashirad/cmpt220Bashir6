@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IntersectingPoint",
+            "request": "launch",
+            "mainClass": "IntersectingPoint",
+            "projectName": "cmpt220Bashir6-1_61d785a4"
+        },
+        {
+            "type": "java",
             "name": "Launch DigitOccurance",
             "request": "launch",
             "mainClass": "DigitOccurance",
