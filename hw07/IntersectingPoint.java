@@ -1,3 +1,4 @@
+
 //Importing a scanner
 import java.util.Scanner;
 
@@ -14,17 +15,17 @@ public class IntersectingPoint {
         Point point2 = new Point(input.nextDouble(), input.nextDouble());
         Point point3 = new Point(input.nextDouble(), input.nextDouble());
         Point point4 = new Point(input.nextDouble(), input.nextDouble());
+        System.out.print(point3);
         input.close();
 
         //get intersection point
-        Point intersect = 
-        Point.getIntersectingPoint(point1, point2, point3, point4);
+        Point intersect = Point.getIntersectingPoint(point1, point2, point3, point4);
         //check if there is a point and print the values if not print the lines are parallel
-        if (intersect == null) {
+        if ( intersect == null) {
             System.out.println("The two lines are parallel");
         }
         else {
-            System.out.println("The intersecting point is at " + intersect);
+            System.out.println("The intersecting point is at (" + intersect.getX() + ", " + intersect.getY() + ")");
         }
 
         
@@ -50,13 +51,16 @@ public class IntersectingPoint {
     
 
     public static Point getIntersectingPoint(Point p1, Point p2, Point p3, Point p4){
+        double intersectX;
+        double intersectY;
+        Point intersection;
         if (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY())) == 0) {
             return null;
         }
         else {
-            double intersectX = (((((p1.getY() - p2.getY()) * p1.getX() - (p1.getX() - p2.getX()) * p1.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) *  ((p3.getY() - p4.getY()) * p3.getX() - (p3.getX() - p4.getX()) * p3.getY()))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))));
-            double intersectY = ((p1.getY() - p2.getY()) * ((p3.getY() - p4.getY()) * p3.getX() - (p3.getX() - p4.getX()) * p3.getY()) - ((p1.getY() - p2.getY()) * p1.getX() - (p1.getX() - p2.getX()) * p1.getY()) * (p3.getY() - p4.getY()) ) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))); 
-            Point intersection = new Point(intersectX, intersectY);
+            intersectX = ((((((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY())) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) *  ((((p3.getY() - p4.getY()) * p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))));
+            intersectY = (((p1.getY() - p2.getY()) * (((p3.getY() - p4.getY()) * (p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))) - (((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY()) * (p3.getY() - p4.getY()) )) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY())))); 
+            intersection =  new Point(intersectX, intersectY);
             return intersection;
         }
     }

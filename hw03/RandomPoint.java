@@ -1,4 +1,4 @@
-//package hw03;
+package hw03;
 
 //import org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt;
 
