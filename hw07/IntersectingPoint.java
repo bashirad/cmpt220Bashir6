@@ -16,7 +16,6 @@ public class IntersectingPoint {
         Point point3 = new Point(input.nextDouble(), input.nextDouble());
         Point point4 = new Point(input.nextDouble(), input.nextDouble());
         input.close();
-
         //get intersection point
         Point intersect = Point.getIntersectingPoint(point1, point2, point3, point4);
         //check if there is a point and print the values if not print the lines are parallel
@@ -26,11 +25,7 @@ public class IntersectingPoint {
         else {
             System.out.println("The intersecting point is at (" + (int)(intersect.getX()*100000)/100000.0 + ", " + (int)(intersect.getY()*100000)/100000.0 + ")");
         }
-
-        
-
     }
-
 }
 
     class Point {
@@ -47,7 +42,6 @@ public class IntersectingPoint {
         public double getY(){
             return y;
         }
-    
 
     public static Point getIntersectingPoint(Point p1, Point p2, Point p3, Point p4){
         double intersectX;
@@ -64,5 +58,6 @@ public class IntersectingPoint {
         }
     }
 }
+
         
    
