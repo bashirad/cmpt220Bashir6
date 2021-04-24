@@ -12,7 +12,7 @@ public class CenterOfTriangle {
         input.close();
         //get intersection point
         Points intersect = Points.getCenterPoint(point1, point2, point3);
-        System.out.println("The Center point is at (" + (int)(intersect.getX()*100000)/100000.0 + ", " + (int)(intersect.getY()*100000)/100000.0 + ")");
+        System.out.println("The Center point is at (" + intersect.getX() + ", " + intersect.getY() + ")");
     }
 }
 
