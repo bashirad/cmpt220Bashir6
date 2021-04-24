@@ -15,7 +15,6 @@ public class IntersectingPoint {
         Point point2 = new Point(input.nextDouble(), input.nextDouble());
         Point point3 = new Point(input.nextDouble(), input.nextDouble());
         Point point4 = new Point(input.nextDouble(), input.nextDouble());
-        System.out.print(point3);
         input.close();
 
         //get intersection point
@@ -25,7 +24,7 @@ public class IntersectingPoint {
             System.out.println("The two lines are parallel");
         }
         else {
-            System.out.println("The intersecting point is at (" + intersect.getX() + ", " + intersect.getY() + ")");
+            System.out.println("The intersecting point is at (" + (int)(intersect.getX()*100000)/100000.0 + ", " + (int)(intersect.getY()*100000)/100000.0 + ")");
         }
 
         
@@ -59,7 +58,7 @@ public class IntersectingPoint {
         }
         else {
             intersectX = ((((((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY())) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) *  ((((p3.getY() - p4.getY()) * p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))));
-            intersectY = (((p1.getY() - p2.getY()) * (((p3.getY() - p4.getY()) * (p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))) - (((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY()) * (p3.getY() - p4.getY()) )) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY())))); 
+            intersectY = (((p1.getY() - p2.getY()) * (((p3.getY() - p4.getY()) * (p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))) - (((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY()) * (p3.getY() - p4.getY()) ))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))); 
             intersection =  new Point(intersectX, intersectY);
             return intersection;
         }
