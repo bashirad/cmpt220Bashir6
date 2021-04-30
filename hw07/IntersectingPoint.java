@@ -44,16 +44,21 @@ public class IntersectingPoint {
         }
 
     public static Point getIntersectingPoint(Point p1, Point p2, Point p3, Point p4){
-        double intersectX;
-        double intersectY;
         Point intersection;
-        if (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY())) == 0) {
+        double a = p1.getY() - p2.getY();
+        double b = p1.getX() - p2.getX();
+        double c = p3.getY() - p4.getY();
+        double d = p3.getX() - p4.getX();
+        double e = a * p1.getX() - b * p1.getY();
+        double f = c * p2.getX() - d * p3.getY();
+
+        if ((a * d - b * c) == 0) {
             return null;
         }
         else {
-            intersectX = ((((((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY())) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) *  ((((p3.getY() - p4.getY()) * p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))));
-            intersectY = (((p1.getY() - p2.getY()) * (((p3.getY() - p4.getY()) * (p3.getX()) - ((p3.getX() - p4.getX()) * p3.getY()))) - (((p1.getY() - p2.getY()) * p1.getX()) - ((p1.getX() - p2.getX()) * p1.getY()) * (p3.getY() - p4.getY()) ))) / (((p1.getY() -  p2.getY()) * (p3.getX() - p4.getX())) - ((p1.getX() - p2.getX()) * (p3.getY() - p4.getY()))); 
-            intersection =  new Point(intersectX, intersectY);
+            double x = (e * d - b * f) / (a * d - b * c);
+            double y = (a * f - e * c) / (a * d - b * c);
+            intersection =  new Point(x, y);
             return intersection;
         }
     }
