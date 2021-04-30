@@ -25,6 +25,7 @@ public class AreaOfTriange {
         }
 }
 
+// JA: This was supposed to take Point objects as arguments
 public static double getTriangleArea(double p1x, double p1y, double p2x, double p2y, double p3x, double p3y){
     double area;
     double constant = 2.0;
