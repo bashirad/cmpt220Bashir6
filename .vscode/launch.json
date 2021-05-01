@@ -9,6 +9,13 @@
             "name": "Launch SplitStrings",
             "request": "launch",
             "mainClass": "SplitStrings",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStrings",
+            "request": "launch",
+            "mainClass": "SplitStrings",
             "projectName": "cmpt220Bashir6-1_61d785a4"
         },
         {
