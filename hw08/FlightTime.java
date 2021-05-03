@@ -5,19 +5,16 @@ import java.util.ArrayList;
 public class FlightTime {
     public static void main(String[] args) {
         List<Flight> flights = new ArrayList<>();
-        flights.add(new Flight("US230",
-        new GregorianCalendar(2014, 4, 5, 5, 5, 0),
-        new GregorianCalendar(2014, 4, 5, 6, 15, 0)));
-        flights.add(new Flight("US235",
-        new GregorianCalendar(2014, 4, 5, 6, 55, 0),
-        new GregorianCalendar(2014, 4, 5, 7, 45, 0)));
-        flights.add(new Flight("US237",
-        new GregorianCalendar(2014, 4, 5, 9, 35, 0),
-        new GregorianCalendar(2014, 4, 5, 12, 55, 0)));
+        flights.add(new Flight("US230", new GregorianCalendar(2014, 4, 5, 5, 5, 0),
+                new GregorianCalendar(2014, 4, 5, 6, 15, 0)));
+        flights.add(new Flight("US235", new GregorianCalendar(2014, 4, 5, 6, 55, 0),
+                new GregorianCalendar(2014, 4, 5, 7, 45, 0)));
+        flights.add(new Flight("US237", new GregorianCalendar(2014, 4, 5, 9, 35, 0),
+                new GregorianCalendar(2014, 4, 5, 12, 55, 0)));
         Itinerary itinerary = new Itinerary(flights);
         System.out.println(itinerary.getTotalTime());
         System.out.println(itinerary.getTotalFlightTime());
-        }
+    }
 }
 
 class Flight {
@@ -25,54 +22,56 @@ class Flight {
     private GregorianCalendar departureTime;
     private GregorianCalendar arrivalTime;
 
-    public String getFlightNo (String flightNo) {
+    public String getFlightNo(String flightNo) {
         this.flightNo = flightNo;
         return flightNo;
     }
 
-    public GregorianCalendar getDepartureTime (GregorianCalendar departureTime) {
-        this.departureTime = departureTime;
-        return departureTime;
-    }
-    
-    public GregorianCalendar setDepartureTime (GregorianCalendar departureTime) {
-        this.departureTime = departureTime;
+    public GregorianCalendar getDepartureTime() {
         return departureTime;
     }
 
-    public GregorianCalendar getArrivalTime (GregorianCalendar arrivalTime) {
-        this.arrivalTime = arrivalTime;
-        return arrivalTime;
+    public void setDepartureTime(GregorianCalendar departureTime) {
+        this.departureTime = departureTime;
     }
-    
-    public GregorianCalendar setArrivalTime (GregorianCalendar arrivalTime) {
-        this.arrivalTime = arrivalTime;
+
+    public GregorianCalendar getArrivalTime() {
         return arrivalTime;
     }
 
-    public Flight (String flightNo, GregorianCalendar departureTime, GregorianCalendar arrivalTime){
+    public void setArrivalTime(GregorianCalendar arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public Flight(String flightNo, GregorianCalendar departureTime, GregorianCalendar arrivalTime) {
         this.flightNo = flightNo;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
     }
 
-    public static Flight getFlightTime (Flight depTime, Flight ArriTime) {
-        GregorianCalendar flightTime = depTime.getDepartureTime() - ArriTime.getArrivalTime();
-        Flight flightTime = new Flight ()
-        return flightTime;
+    public int getFlightTime() {
+        return (int) (arrivalTime.getTimeInMillis() - departureTime.getTimeInMillis()) / 60000;
     }
 }
 
 class Itinerary {
-    public List<Flight> flights;
+    private List<Flight> flights;
 
-    public Itinerary (List<Flight> flights){
+    public Itinerary(List<Flight> flights) {
         this.flights = flights;
     }
 
-    public double getTotalTime( double departTime, double arriTime){
-        double totalTime = departTime - arriTime;
-        return totalTime;
+    public int getTotalTime() {
+        return (int) (flights.get(flights.size() - 1).getArrivalTime().getTimeInMillis()
+                - flights.get(0).getDepartureTime().getTimeInMillis()) / 60000;
+    }
+
+    public int getTotalFlightTime() {
+        int time = 0;
+        for (Flight flight : flights) {
+            time += flight.getFlightTime();
+        }
+        return time;
     }
 
 }
