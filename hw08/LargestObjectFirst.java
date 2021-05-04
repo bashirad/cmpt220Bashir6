@@ -8,18 +8,67 @@ public class LargestObjectFirst {
         System.out.print("Enter the total number of objects: ");
 
         //read the scanner
-        int Objectsnum = input.nextInt();
-        ArrayList<number> objects = new ArrayList<>();
+        int numObjects = input.nextInt();
         System.out.print("Enter the weights of the objects: ");
 
-        for (int i = 0; i < Objectsnum; i++) {
-        objects.add(input.nextInt());
+        Integer[] weights = new integer[numObjects];
+        for (int i = 0; i < numObjects; i++) {
+            weights[i] = input.nextInt();
         }
-        int pin = 1;
-        while(!objects.isEmpty()) {
-        System.out.println("Pin " + pin++ + " has objects with weight " + getPin(objects, 10));
+        //order weights
+        Arrays.sort(weights);
+
+        //add the weights to the pins
+        ArrayList<Pin> pins = new ArrayList<>();
+        for (int i = numObjects - 1; i >= 0; i-- ) {
+            boolean added = false;
+            for(Pin pin : pins){
+                if( added = pin.addElement(weights[i])){
+                    break;
+                }
+            }
+            if(!added){
+                Pin pins = new Pin();
+                pins.addElement(weights[i]);
+                pins.add(pins);
+            }
+        }
+        for (Pin pins : pins){
+            System.out.println(pins);
+        }
   }
  }
- 
 
+
+class Pin extends ArrayList<Integer> {
+    private static final int CAPACITY = 10;
+    static int pins = 0;
+    private int pinId;
+
+    Pin() {
+        super();
+        pins++;
+        pinId = pins;
+    }
+
+    public boolean addElement(int elem) {
+        int weight = 0;
+        for(int i = 0; i <size();i++){
+            weight += get(i).intValue();
+        }
+        if(weight + elem <= CAPACITY){
+            add(elem);
+            return true;
+        }
+        return false;
+
+    }
+    @Override 
+    public String toString(){
+        String message = "Pin " + pinId + " has objects with weight ";
+        for (int i = 0; i < size(); i++){
+            
+        }
+        return message;
+    }
 }

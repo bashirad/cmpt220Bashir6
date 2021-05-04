@@ -5,15 +5,22 @@ public class SplitStrings {
     public static void main(String[] args) {
         //Create a scanner
         Scanner input= new Scanner(System.in);
-        System.out.print("Enter a string and delimiters: ");
+        System.out.print("Enter a string to split: ");
         //Read scanner
         String userString = input.nextLine();
+        //Read scanner
+        System.out.print("Enter delimiters: ");
         input.close();
-        System.out.println(split(userString, "!@ #$%"));
     }
 
 
-
+    public static ArrayList<Character> splitDelimiters(String delimiters){
+        ArrayList<Character> delimList = new ArrayList<>();
+        for(int i = 0; i < delimiters.length(); i++) {
+            ArrayList<String> splitted = splitString(s, delimiters);
+            return splitted;
+        }
+    }
 
     public static ArrayList<String> split(String s, String delimiters){
         ArrayList<String> splittedMessage = new ArrayList<String>();
