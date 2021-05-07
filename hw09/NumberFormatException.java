@@ -12,7 +12,7 @@ public class NumberFormatException {
 
     public static int bin2Dec(String binaryStrings) throws NumberFormatException {    
         if (!isABinaryNumber(binaryStrings)) {
-            throw new NumberFormatException(binaryStrings + "is a non-binary number");
+            throw NumberFormatException (binaryStrings + "is a non-binary number");
         }
         
         int powerAtPosition = 0;
@@ -30,7 +30,7 @@ public class NumberFormatException {
     
     public static boolean isABinaryNumber (String binaryStrings) {
         for (char ch: binaryStrings.toCharArray()){
-            if (ch != '1' || ch != '0') 
+            if (ch != '1' && ch != '0') 
             return false;
         }
         return true;
