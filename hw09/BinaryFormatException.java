@@ -10,9 +10,9 @@ public class BinaryFormatException{
         System.out.println(bin2Dec(stringFromUSer));
     }
 
-    public static int bin2Dec(String binaryStrings) throws NumberFormatException {    
+    public static int bin2Dec(String binaryStrings) throws BinaryFormatException {    
         if (!isABinaryNumber(binaryStrings)) {
-            throw NumberFormatException (binaryStrings + "is a non-binary number");
+            throw BinaryFormatException (binaryStrings + "is a non-binary number");
         }
         
         int powerAtPosition = 0;
@@ -38,3 +38,8 @@ public class BinaryFormatException{
 
 }
 
+class BinaryFormatException extends IllegalArgumentException {
+    BinaryFormatException(String binary){
+        super(binary);
+    }
+}
