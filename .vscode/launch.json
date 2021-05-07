@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NumberFormatException",
+            "request": "launch",
+            "mainClass": "NumberFormatException",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayIndexOutOfBoundsException",
             "request": "launch",
             "mainClass": "ArrayIndexOutOfBoundsException",
