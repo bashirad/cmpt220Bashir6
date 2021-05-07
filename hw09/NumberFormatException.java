@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class NumberFormatException {
-    public static void main(String[] args) {
+public class NumberFormatException{
+    public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a binary number: ");
