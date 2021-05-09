@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BinaryFormatException{
+public class BinaryFormatExceptionTest{
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class BinaryFormatException{
 
     public static int bin2Dec(String binaryStrings) throws BinaryFormatException {    
         if (!isABinaryNumber(binaryStrings)) {
-            throw BinaryFormatException (binaryStrings + "is a non-binary number");
+            throw new BinaryFormatException (binaryStrings + "is a non-binary number");
         }
         
         int powerAtPosition = 0;
