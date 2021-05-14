@@ -1,4 +1,4 @@
-
+package hw06;
 //importing scanner
 import java.util.Scanner;
 

@@ -1,6 +1,10 @@
+package hw08;
+
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.ArrayList;
+
+
 
 public class FlightTime {
     public static void main(String[] args) {

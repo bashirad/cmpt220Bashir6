@@ -1,4 +1,4 @@
-//package hw05;
+package hw05;
 
 //import scanner
 import java.util.Scanner; 

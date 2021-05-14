@@ -1,4 +1,7 @@
+package hw08;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LargestObjectFirst {
@@ -11,7 +14,7 @@ public class LargestObjectFirst {
         int numObjects = input.nextInt();
         System.out.print("Enter the weights of the objects: ");
 
-        Integer[] weights = new integer[numObjects];
+        Integer[] weights = new Integer[numObjects];
         for (int i = 0; i < numObjects; i++) {
             weights[i] = input.nextInt();
         }
