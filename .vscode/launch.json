@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeProgram",
+            "request": "launch",
+            "mainClass": "hw10.TimeProgram",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch NumberFormatException",
             "request": "launch",
             "mainClass": "NumberFormatException",
