@@ -8,8 +8,6 @@ public class SplitStrings {
         // Create a scanner
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a string and delimiters: ");
-        // Read scanner
-        String userString = input.nextLine();
         //Read scanner
         System.out.print("Enter delimiters: ");
         input.close();

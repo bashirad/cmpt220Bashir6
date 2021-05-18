@@ -15,7 +15,7 @@ public class ArrayIndexOutOfBoundsException {
         Scanner input = new Scanner(System.in);
         //promt the user to enter the index of the array
         System.out.print("Enter the index of the array: ");
-       // input.close();
+        input.close();
         
         try {
             int theIndex = input.nextInt();

@@ -7,6 +7,8 @@ public class TimeProgram {
     public static void main(String[] args) {
         //create a scanner
         Scanner input = new Scanner(System.in);
+        input.close();
+        
         //prompt the user to enter time
         System.out.print("Enter time1 (hour minute second): ");
         String hour = input.next();

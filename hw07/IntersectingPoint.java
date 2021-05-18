@@ -1,3 +1,4 @@
+package hw07;
 
 //Importing a scanner
 import java.util.Scanner;
