@@ -33,7 +33,7 @@ public class TimeProgram {
     }
 }
 
-class Time {
+class Time implements Comparable<Time> {
     private long mTime;
 
     public Time() {
@@ -63,8 +63,14 @@ class Time {
         return (int)(mTime / 1000) % 60;
     }
 
+    @Override
+    public int compareTo(Time o) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
 }
 
- class Comparison implements Comparable<Time> {
-    return  this.getHour().compareTo(Time.getHour);    
-}
+// class Comparison implements Comparable<Time> {
+//    return  this.getHour().compareTo(Time.getHour);    
+//}
