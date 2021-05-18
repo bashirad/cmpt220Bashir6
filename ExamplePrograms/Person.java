@@ -5,6 +5,10 @@ public abstract class Person implements Game {
    
     public abstract String greet();    
 
+    public Person(String name){
+        this.name = name;
+    }
+
     public  String getName() {
         return name;
     }

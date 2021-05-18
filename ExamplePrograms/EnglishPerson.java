@@ -2,6 +2,10 @@ package ExamplePrograms;
 
 public class EnglishPerson extends Person{
     
+    public EnglishPerson(String name) {
+        super(name);
+    } 
+
     @Override
     public String greet() {
         return "Hello. Welcome!";
