@@ -1,10 +1,7 @@
 package ExamplePrograms; 
 
-public abstract class Person {
+public abstract class Person implements Game {
     private String name;
-    public static void main(String[] args) {
-        
-    }
    
     public abstract String greet();    
 
