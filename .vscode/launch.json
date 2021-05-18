@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SpanishPerson",
+            "request": "launch",
+            "mainClass": "ExamplePrograms.SpanishPerson",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch EnglishPerson",
+            "request": "launch",
+            "mainClass": "ExamplePrograms.EnglishPerson",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch TimeProgram",
             "request": "launch",
             "mainClass": "hw10.TimeProgram",
