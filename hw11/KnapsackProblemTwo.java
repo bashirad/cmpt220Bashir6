@@ -22,10 +22,10 @@ public class KnapsackProblemTwo{
         //display the result
         ArrayList<Integer> answer = m(numberOfItems, bagWeightLimit, weightOfItems);
         System.out.println("The maximum weight of the items placed in the bag is " + answer.size());
-        /*for (int i = 0; i < answer.size();i++){		
+        for (int i = 0; i < answer.size();i++){		
             System.out.println("The items in the bag are #" + answer.indexOf(i) + " #" + answer.indexOf(i)); 
             System.out.println("The weights of the items in the bag are " + answer.get(i) + " ");
-	    }*/
+	    }
         input.close();
     }
 
