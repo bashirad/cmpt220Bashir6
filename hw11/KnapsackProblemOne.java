@@ -18,6 +18,7 @@ public class KnapsackProblemOne {
         System.out.print("Enter the weight limit for the bag: ");
         double bagWeightLimit = input.nextDouble();
         System.out.print("The maximum weight of the items placed in the bag is " + m(numberOfItems, bagWeightLimit, weightOfItems));
+        input.close();
     }
 
     public static double m(int i, double wieghtLimit, double [] weights) {
