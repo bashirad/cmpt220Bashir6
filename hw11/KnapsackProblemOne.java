@@ -21,16 +21,16 @@ public class KnapsackProblemOne {
         input.close();
     }
 
-    public static double m(int i, double wieghtLimit, double [] weights) {
+    public static double m(int i, double wieghtLimit, double [] w) {
         //Base case
         if (i == 0 || wieghtLimit == 0) {
             return 0.0;
         }
-        if (weights[i] > wieghtLimit) {
-            return m(i - 1, wieghtLimit, weights);
+        if (w[i] > wieghtLimit) {
+            return m(i - 1, wieghtLimit, w);
         }
         else {
-            return Math.max(m(i - 1, wieghtLimit, weights), weights[i] + m(i - 1, wieghtLimit - weights[i], weights));
+            return Math.max(m(i - 1, wieghtLimit, w), w[i] + m(i - 1, wieghtLimit - w[i], w));
         }
     }
 }
