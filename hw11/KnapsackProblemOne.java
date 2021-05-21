@@ -12,7 +12,7 @@ public class KnapsackProblemOne {
         int numberOfItems = input.nextInt();
         System.out.print("Enter the weights for each item: ");
         double [] weightOfItems = new double[numberOfItems + 1];
-        for (int i = 0; i < numberOfItems; i++) {
+        for (int i = 1; i <= numberOfItems; i++) {
             weightOfItems [i] = input.nextDouble();
         }
         System.out.print("Enter the weight limit for the bag: ");
