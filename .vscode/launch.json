@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch KnapsackProblemTwo",
+            "request": "launch",
+            "mainClass": "hw11.KnapsackProblemTwo",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapsackProblemOne",
+            "request": "launch",
+            "mainClass": "hw11.KnapsackProblemOne",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch Driver",
             "request": "launch",
             "mainClass": "ExamplePrograms.Driver",
