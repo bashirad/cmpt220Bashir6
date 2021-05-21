@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AreaPolygon",
+            "request": "launch",
+            "mainClass": "hw06.AreaPolygon",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch KnapsackProblemTwo",
             "request": "launch",
             "mainClass": "hw11.KnapsackProblemTwo",
