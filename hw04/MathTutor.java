@@ -54,12 +54,14 @@ public class MathTutor {
         }
 
         else if (choice == 4) {
-            System.out.print("What is " + randomNumber1 + " / " + randomNumber2 + "? "); 
-            int actualAnswer = divisionTest(randomNumber1, randomNumber2);
-            int userAnswer = input.nextInt();
-            
-            //evaluate the answer
-            evaluateAnswer(userAnswer, actualAnswer);    
+            if (randomNumber2 != 0) {
+                System.out.print("What is " + randomNumber1 + " / " + randomNumber2 + "? "); 
+                int actualAnswer = divisionTest(randomNumber1, randomNumber2);
+                int userAnswer = input.nextInt();
+                
+                //evaluate the answer
+                evaluateAnswer(userAnswer, actualAnswer); 
+            }   
         }
 
         else {
@@ -112,15 +114,8 @@ public class MathTutor {
 
     //A Method for Division
     public static int divisionTest(int num1, int num2) {
-        if (num2 == 0) {
-            int qoutient = num2 / num1;
-            return qoutient;
-        }
-        else {
             int qoutient = num1 / num2;
             return qoutient;
         }
 
     }
-
-}
