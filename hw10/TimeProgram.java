@@ -67,7 +67,6 @@ class Time implements Comparable<Time> {
 
     @Override
     public int compareTo(Time o) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
