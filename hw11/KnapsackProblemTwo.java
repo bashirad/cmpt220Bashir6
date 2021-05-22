@@ -18,7 +18,7 @@ public class KnapsackProblemTwo{
         }
         System.out.print("Enter the weight limit for the bag: ");
         double bagWeightLimit = input.nextDouble();
-
+    
         //display the result
         ArrayList<Integer> answer = m(numberOfItems, bagWeightLimit, weightOfItems);
         System.out.println("The maximum weight of the items placed in the bag is " + answer.size());
@@ -38,7 +38,7 @@ public class KnapsackProblemTwo{
 
             return m(i - 1, wieghtLimit, w);
         }
-        else{
+        else {
             ArrayList<Integer> partOne = m(i - 1, wieghtLimit, w);
             //calculate the weight first recursion call
             int sum1 = 0; 
