@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestingAnything",
+            "request": "launch",
+            "mainClass": "Test.TestingAnything",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch AreaPolygon",
             "request": "launch",
             "mainClass": "hw06.AreaPolygon",

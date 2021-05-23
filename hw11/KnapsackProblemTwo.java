@@ -21,11 +21,13 @@ public class KnapsackProblemTwo{
     
         //display the result
         ArrayList<Integer> answer = m(numberOfItems, bagWeightLimit, weightOfItems);
-        System.out.println("The maximum weight of the items placed in the bag is " + answer.size());
-        for (int i = 0; i < answer.size();i++){		
+        System.out.println("The maximum weight of the items placed in the bag is " + answer.toString());
+
+        /*for (int i = 0; i < answer.size();i++){		
             System.out.println("The items in the bag are #" + answer.indexOf(i) + " "); 
             System.out.println("The weights of the items in the bag are " + answer.get(i) + " ");
-	    }
+	    }*/
+
         input.close();
     }
 
@@ -42,7 +44,10 @@ public class KnapsackProblemTwo{
             ArrayList<Integer> partOne = m(i - 1, wieghtLimit, w);
             //calculate the weight first recursion call
             int sum1 = 0; 
-            for (Integer e: partOne){
+            for (int j = 0; j < partOne.size(); i++){
+                sum1 += w[partOne.get(i)];
+            }
+            /*for (Integer e: partOne){
                 sum1 += w[e.intValue()];
             }
 
@@ -60,7 +65,8 @@ public class KnapsackProblemTwo{
             }
             else {
                 return partTwo;
-            }
+            }*/
+            return partOne;
             
         }
     }
