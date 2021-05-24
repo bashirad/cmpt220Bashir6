@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DigitOccurance",
+            "request": "launch",
+            "mainClass": "hw06.DigitOccurance",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestingDigits",
+            "request": "launch",
+            "mainClass": "hw06.TestingDigits",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch TestingAnything",
             "request": "launch",
             "mainClass": "Test.TestingAnything",
