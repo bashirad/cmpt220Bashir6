@@ -10,7 +10,7 @@ public class AreaPolygon {
 
         //prompting the user to enter x coordinates of the 6 points
         System.out.print("Enter the 6 points, as x and y separated by space: ");
-        int [] points = new int [13];
+        int [] points = new int [12];
         for (int i = 0; i < 13; i++){
             points[i] = input.nextInt();
         }
