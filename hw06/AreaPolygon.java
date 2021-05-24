@@ -14,7 +14,8 @@ public class AreaPolygon {
         for (int i = 0; i < 13; i++){
             points[i] = input.nextInt();
         }
-        
+        input.close();
+
         //calculate the sidelengths for all triangles
         int sidelengthOneddd = getsideLength(points[2], points[0], points[3], points[1]);
         int sidelengthTwoeee = getsideLength(points[4], points[2], points[5], points[3]);
