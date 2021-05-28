@@ -1,4 +1,4 @@
-package hw06;
+package Test;
 
 import java.util.Scanner;
 
@@ -17,6 +17,8 @@ public class TestingDigits {
     System.out.println();
     System.out.println("The occurrences of each letter are:");
     displayCounts(counts);
+
+    input.close();
   }
 
   /** Count the occurrences of each character */
