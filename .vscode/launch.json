@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LargestObjectFirst",
+            "request": "launch",
+            "mainClass": "hw08.LargestObjectFirst",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStrings",
+            "request": "launch",
+            "mainClass": "hw08.SplitStrings",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch FlightTime",
             "request": "launch",
             "mainClass": "hw08.FlightTime",

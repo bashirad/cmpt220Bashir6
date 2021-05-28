@@ -19,7 +19,7 @@ public class SplitStrings {
 
         for (int i = 0; i < s.length(); i++) {
             if (delimiters.charAt(i) == s.charAt(i)) {
-                splittedMessage.add(", ");// JA: ?
+                splittedMessage.add(", ");
             } else {
                 str += s.charAt(i);
                 splittedMessage.add(str);

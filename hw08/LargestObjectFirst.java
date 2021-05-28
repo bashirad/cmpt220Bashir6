@@ -31,13 +31,13 @@ public class LargestObjectFirst {
                 }
             }
             if(!added){
-                Pin pins = new Pin();
-                pins.addElement(weights[i]);
-                pins.add(pins);
+                Pin pin = new Pin();
+                pin.addElement(weights[i]);
+                pins.add(pin);
             }
         }
-        for (Pin pins : pins){
-            System.out.println(pins);
+        for (Pin pin : pins){
+            System.out.println(pin);
         }
   }
  }
