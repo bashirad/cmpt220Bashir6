@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FlightTime",
+            "request": "launch",
+            "mainClass": "hw08.FlightTime",
+            "projectName": "cmpt220Bashir6_f1b78000"
+        },
+        {
+            "type": "java",
             "name": "Launch MatricInverse",
             "request": "launch",
             "mainClass": "hw06.MatricInverse",
