@@ -46,6 +46,10 @@ class Flight {
     public void setArrivalTime(GregorianCalendar arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
+    
+    public String getFlightNo (){
+        return flightNo;
+    }
 
     public Flight(String flightNo, GregorianCalendar departureTime, GregorianCalendar arrivalTime) {
         this.flightNo = flightNo;
