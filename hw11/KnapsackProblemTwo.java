@@ -23,10 +23,10 @@ public class KnapsackProblemTwo{
         ArrayList<Integer> answer = m(numberOfItems, bagWeightLimit, weightOfItems);
         System.out.println("The maximum weight of the items placed in the bag is " + answer.toString());
 
-        /*for (int i = 0; i < answer.size();i++){		
+        for (int i = 0; i < answer.size();i++){		
             System.out.println("The items in the bag are #" + answer.indexOf(i) + " "); 
             System.out.println("The weights of the items in the bag are " + answer.get(i) + " ");
-	    }*/
+	    }
 
         input.close();
     }
@@ -47,7 +47,7 @@ public class KnapsackProblemTwo{
             for (int j = 0; j < partOne.size(); i++){
                 sum1 += w[partOne.get(i)];
             }
-            /*for (Integer e: partOne){
+            for (Integer e: partOne){
                 sum1 += w[e.intValue()];
             }
 
@@ -65,8 +65,7 @@ public class KnapsackProblemTwo{
             }
             else {
                 return partTwo;
-            }*/
-            return partOne;
+            }
             
         }
     }
