@@ -39,6 +39,7 @@ public class LargestObjectFirst {
         for (Pin pin : pins){
             System.out.println(pin);
         }
+        input.close();
   }
  }
 
