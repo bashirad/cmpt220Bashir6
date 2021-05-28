@@ -1,44 +1,25 @@
 package Test;
-
-import java.util.ArrayList;
-
+import java.util.*;
 public class TestingAnything {
-    public static void main(String[] args) {
-        /*int x = 1;
-        System.out.println(x + " " + m(x));
-        String messenger = "";
-        for (Integer e: m({10.0, 11.0, 12.0, 13.0})) {
-          messenger += m(10.0).get(e) + " ";
-        }*/
-        int array = 3;
-        System.out.println(m(array).toString());
-    }
-    
-    public static ArrayList<Integer> m(int x) {
-        ArrayList<Integer> testing = new ArrayList<>();
-        //Base case
-        if (x == 0) {
-          testing.add(0);
-          return testing;
-        } 
-        //Base case
-        else if (x == 1) {
-          testing.add(1);
-          return testing;
-        }
-        //Reduction and Recursive calls
-        else  
-          return m(x - 1);
-      }
+  public static void main(String[] args) {
+    Set<String> set1 = new HashSet<>(); 
+      set1.add("Atlanta"); 
+      set1.add("Macon"); 
+      set1.add("Savanna");
 
-      public static String mine(ArrayList<Integer> ans) {
-        String messenger = "";
-        for (Integer e: ans) {
-          messenger += ans.get(e) + " ";
-        }
-        return messenger;
-      }
-    }
+      Set<String> set2 = new HashSet<>();
+      set2.add("Atlanta"); 
+      set2.add("Macon"); 
+      set2.add("Savanna");
+
+      Set<String> set3 = new HashSet<>(); 
+      set3.add("Macon");
+ 
+      set3.add("Savanna"); 
+      set3.add("Atlanta");
+
+      System.out.println(set1.equals(set2) + " " + set1.equals(set3));
+  }
   
-    
+}  
   
