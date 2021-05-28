@@ -20,6 +20,7 @@ public class DigitOccurance {
             }
         }
         System.out.print(answer);
+        input.close();
     }
 
     //method to count the number of accurances in a string
